@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aakarsh Classes - Students 1st Choice</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <ul class="nav-list">
+                <div class="logo">
+                    <img src="img/logo - Copy.jpg" alt="logo" title="Home Page" onclick="window.location='/index.html'">
+                </div>
+                <div class="heading">
+                    <img src="img/title.png" alt="0">
+                </div>
+                <div class="menu">
+                    <a href="/index.html"><li>Home</li></a>
+                    <a href="/index.html#courses"><li>Courses</li></a>
+                    <a href="/contact.html"><li>Contact</li></a>
+                    <a href="/about.html"><li>About</li></a>
+                </div>
+            </ul>
+        </div>        
+    </header>
+    <div class="contact-section">
+        <center><h1 style="color: white;">Contact Us</h1></center>
+            <div class="form">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Name" required>
+            </div>
+            <div class="form">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="xyz@abc.com" required>
+            </div>
+            <div class="form">
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" rows="5" required></textarea>
+            </div>
+            <div class="form">
+                <button onclick="sendEmail()">Submit</button>
+            </div>
+        </div>    
+    </div>
+    <div class="contact-details">
+        <p><u>Contact No.</u>:<a href="tel: +91 1234567890">+91 1234567890</a></p> 
+        <br>
+        <p><u>Add.</u>: XYZ Colony,<br>&emsp;&emsp;ABC Lane,<br>&emsp;&emsp;Gaya-823001</p> 
+        <p><u>Mail ID</u>: <a href="mailto:aakarsh2504@gmail.com"> aakarsh2504@gmail.com</a></p>
+    </div>
+    <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.869578978791!2d85.00679751436978!3d24.799919053790425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f32a167b7ec1c7%3A0x6c9f04e74e8a4726!2sAN%20Road%2C%20Gaya%2C%20Bihar%20823001!5e0!3m2!1sen!2sin!4v1628683597756!5m2!1sen!2sin" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></center>
+    <footer>
+        Copyright &copy; Aakarsh Classes 2021 All Rights Reserved <br>Created by Aakarsh Kumar <br>
+        Contact: <a href="tel: +91 1234567890">+91 1234567890</a>
+    </footer>
+    <script src="js/mail.js"></script>
+</body>
+</html>
