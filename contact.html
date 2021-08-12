@@ -26,6 +26,7 @@
             </ul>
         </div>        
     </header>
+    <form action="javascript:sendEmail()">
     <div class="contact-section">
         <center><h1 style="color: white;">Contact Us</h1></center>
             <div class="form">
@@ -40,11 +41,12 @@
                 <label for="message">Message:</label>
                 <textarea name="message" id="message" rows="5" required></textarea>
             </div>
-            <div class="form">
-                <button onclick="sendEmail()">Submit</button>
+            <div class="form-1">
+                <input type="submit" value="Submit" id="contact-submitbtn">
             </div>
         </div>    
     </div>
+    </form>
     <div class="contact-details">
         <p><u>Contact No.</u>:<a href="tel: +91 1234567890">+91 1234567890</a></p> 
         <br>
@@ -56,6 +58,7 @@
         Copyright &copy; Aakarsh Classes 2021 All Rights Reserved <br>Created by Aakarsh Kumar <br>
         Contact: <a href="tel: +91 1234567890">+91 1234567890</a>
     </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="js/mail.js"></script>
 </body>
 </html>
