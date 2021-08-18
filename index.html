@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,29 +8,38 @@
     <title>Aakarsh Classes - Students 1st Choice</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header>
         <div class="navbar">
             <ul class="nav-list">
                 <div class="logo">
-                    <img src="img/logo - Copy.jpg" alt="logo" title="Home Page" onclick="window.location='/index.html'">
+                    <img src="img/logo - Copy.jpg" alt="logo" title="Home Page" onclick="window.location='index.html'">
                 </div>
                 <div class="heading">
                     <img src="img/title.png" alt="0">
                 </div>
                 <div class="menu">
-                    <a href="index.html"><li>Home</li></a>
-                    <a href="index.html#courses"><li>Courses</li></a>
-                    <a href="contact.html"><li>Contact</li></a>
-                    <a href="about.html"><li>About</li></a>
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="index.html#courses">
+                        <li>Courses</li>
+                    </a>
+                    <a href="contact.html">
+                        <li>Contact</li>
+                    </a>
+                    <a href="about.html">
+                        <li>About</li>
+                    </a>
                 </div>
             </ul>
-        </div> 
+        </div>
         <!-- <div class="typewriter-1">  -->
         <div class="typewriter">
             <h1>Complete Solution for Technological Courses</h1>
         </div>
-    <!-- </div>    -->
+        <!-- </div>    -->
     </header>
     <div class="head-sec1">
         <div class="head-sec1-content">
@@ -38,7 +48,12 @@
                 <br>
                 <a href="democlass.html"><button>Book Demo Class</button></a>
             </h1>
-            <p>Curriculum development in courses need to be crafted in the form of program paths that can be followed by the students to gain a wholesome understanding of topics. We, at Aakarsh Classes, ensure that the design of the curriculum is tailored in such a way that students are able to experience the nuances of the course in practical and profound ways. This involves creation of specific workshops as well as intricate patterned coaching schedules, which are tailored on the basis of strategic choice of the institute, professors and students.</p>
+            <p>Curriculum development in courses need to be crafted in the form of program paths that can be followed by
+                the students to gain a wholesome understanding of topics. We, at Aakarsh Classes, ensure that the design
+                of the curriculum is tailored in such a way that students are able to experience the nuances of the
+                course in practical and profound ways. This involves creation of specific workshops as well as intricate
+                patterned coaching schedules, which are tailored on the basis of strategic choice of the institute,
+                professors and students.</p>
         </div>
         <div class="head-sec1-img">
             <img src="img/img2.png" alt="Image1">
@@ -48,22 +63,22 @@
         <div class="slideshow-container">
             <div class="mySlides fade">
                 <div class="numbertext">1 / 3</div>
-              <img src="img/logo.jpg">
-              <div class="text">Launcing Quizish</div>
+                <img src="img/logo.jpg">
+                <div class="text">Launcing Quizish</div>
             </div>
-            
+
             <div class="mySlides fade">
                 <div class="numbertext">2 / 3</div>
                 <img src="img/slideshow/img2.jpg">
                 <div class="text">Caption Two</div>
             </div>
-            
+
             <div class="mySlides fade">
                 <div class="numbertext">3 / 3</div>
                 <img src="img/slideshow/img3.jpg">
                 <div class="text">Caption Three</div>
             </div>
-            
+
             <!-- Next and previous buttons -->
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -75,35 +90,38 @@
             </div>
         </div>
         <div class="message-container">
-            <table border="0" cellpadding="0" cellspacing="0" >
-                <tbody><tr>
-                <td>
-                <marquee direction="up" scrollamount="3" onmouseover="this.stop()" onmouseout="this.start()" class="blink">
-                    <ul id="updates">
-                        <script>
-                            fetch('updates.json')
-                                .then(function (response) {
-                                    return response.json();
-                                })
-                                .then(function (data) {
-                                    appendData(data);
-                                })
-                                .catch(function (err) {
-                                    console.log('error: ' + err);
-                                });
-                            function appendData(data) {
-                                var mainContainer = document.getElementById("updates");
-                                for (var i = 0; i < data.length; i++) {
-                                    var div = document.createElement("div");
-                                    div.innerHTML += "<a href="+data[i].link+" target='_blank'>"+data[i].update+"</a>"
-                                    mainContainer.appendChild(div);
-                                }
-                            }
-                        </script>
-                    </ul>
-                </marquee>
-                </td>
-                </tr></tbody>
+            <table border="0" cellpadding="0" cellspacing="0">
+                <tbody>
+                    <tr>
+                        <td>
+                            <marquee direction="up" scrollamount="3" onmouseover="this.stop()" onmouseout="this.start()"
+                                class="blink">
+                                <ul id="updates">
+                                    <script>
+                                        fetch('updates.json')
+                                            .then(function (response) {
+                                                return response.json();
+                                            })
+                                            .then(function (data) {
+                                                appendData(data);
+                                            })
+                                            .catch(function (err) {
+                                                console.log('error: ' + err);
+                                            });
+                                        function appendData(data) {
+                                            var mainContainer = document.getElementById("updates");
+                                            for (var i = 0; i < data.length; i++) {
+                                                var div = document.createElement("div");
+                                                div.innerHTML += "<a href=" + data[i].link + " target='_blank'>" + data[i].update + "</a>"
+                                                mainContainer.appendChild(div);
+                                            }
+                                        }
+                                    </script>
+                                </ul>
+                            </marquee>
+                        </td>
+                    </tr>
+                </tbody>
             </table>
             <div class="text">Updates</div>
         </div>
@@ -112,15 +130,22 @@
         <div class="head-sec1-content">
             <h1>
                 With Love - <br> Aakarsh Classes
-                <br>    
+                <br>
             </h1>
-            <p>Instead of merely focusing on curriculum development as a whole, Writopedia offers the services of its best content writers for coaching institutes to create their own online study repositories. These include entire virtual libraries, which could contain self-published material gathered by the institution itself as well as other sources of information. We can empower coaching centers to create and publish their own content and even empower students to take up content creation for the institute itself.</p>
+            <p>Instead of merely focusing on curriculum development as a whole, Writopedia offers the services of its
+                best content writers for coaching institutes to create their own online study repositories. These
+                include entire virtual libraries, which could contain self-published material gathered by the
+                institution itself as well as other sources of information. We can empower coaching centers to create
+                and publish their own content and even empower students to take up content creation for the institute
+                itself.</p>
         </div>
         <div class="head-sec1-img">
             <img src="img/img3.png" alt="Image1">
         </div>
     </div>
-    <h1 id='courses'><center>Courses</center></h1>
+    <h1 id='courses'>
+        <center>Courses</center>
+    </h1>
     <div class="head-sec3">
         <div class="flip-card">
             <div class="flip-card-inner">
@@ -275,7 +300,8 @@
         Copyright &copy; Aakarsh Classes 2021 All Rights Reserved <br>Created by Aakarsh Kumar <br>
         Contact: <a href="tel: +91 1234567890">+91 1234567890</a>
     </footer>
-    
+
     <script src="js/script.js"></script>
 </body>
+
 </html>
