@@ -27,7 +27,7 @@ function showSlides(n) {
     dots[slideIndex - 1].className += " active";
 }
 setInterval("plusSlides(1)", 5000)
-fetch('courses.json')
+fetch('json/courses.json')
     .then(function(response) {
         return response.json();
     })
@@ -82,3 +82,23 @@ function courses(data) {
         bp2.innerHTML = `By:- ${data[index].professorName}`;
     };
 };
+
+fetch('json/updates.json')
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(data) {
+        appendData(data);
+    })
+    .catch(function(err) {
+        console.log('error: ' + err);
+    });
+
+function appendData(data) {
+    var mainContainer = document.getElementById("updates");
+    for (var i = 0; i < data.length; i++) {
+        var div = document.createElement("div");
+        div.innerHTML += "<a href=" + data[i].link + " target='_blank'>" + data[i].update + "</a>"
+        mainContainer.appendChild(div);
+    }
+}

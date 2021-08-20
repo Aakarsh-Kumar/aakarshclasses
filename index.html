@@ -91,29 +91,7 @@
                     <tr>
                         <td>
                             <marquee direction="up" scrollamount="3" onmouseover="this.stop()" onmouseout="this.start()" class="blink">
-                                <ul id="updates">
-                                    <script>
-                                        fetch('updates.json')
-                                            .then(function(response) {
-                                                return response.json();
-                                            })
-                                            .then(function(data) {
-                                                appendData(data);
-                                            })
-                                            .catch(function(err) {
-                                                console.log('error: ' + err);
-                                            });
-
-                                        function appendData(data) {
-                                            var mainContainer = document.getElementById("updates");
-                                            for (var i = 0; i < data.length; i++) {
-                                                var div = document.createElement("div");
-                                                div.innerHTML += "<a href=" + data[i].link + " target='_blank'>" + data[i].update + "</a>"
-                                                mainContainer.appendChild(div);
-                                            }
-                                        }
-                                    </script>
-                                </ul>
+                                <ul id="updates"></ul>
                             </marquee>
                         </td>
                     </tr>

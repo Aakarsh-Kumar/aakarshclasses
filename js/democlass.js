@@ -1,7 +1,4 @@
-let dropdownItem = document.getElementsByClassName('dropdown-item');
-// dropdownItem[0].addEventListener('click', setText);
-
-fetch('courses.json')
+fetch('json/courses.json')
     .then(function(response) {
         return response.json();
     })
@@ -14,31 +11,31 @@ fetch('courses.json')
     });
 
 function courses(data) {
-    let coursesDropdownUl = document.getElementById('courses-dropdown-ul');
+    coursesDropdownUl = document.getElementById('dropdown-content-democlass');
     for (let index = 0; index < data.length; index++) {
-        let coursesDropdownLi = document.createElement('li');
-        coursesDropdownUl.appendChild(coursesDropdownLi);
-
-        let coursesDropdownUla = document.createElement('a');
-        coursesDropdownUla.className = 'dropdown-item pointer';
-        coursesDropdownLi.appendChild(coursesDropdownUla).innerHTML = `${data[index].Name}`;
+        let coursesDropdowna = document.createElement('a');
+        coursesDropdowna.className = 'pointer'
+        coursesDropdownUl.appendChild(coursesDropdowna).innerHTML = `${data[index].Name}`;
     }
-    for (let index = 0; index < dropdownItem.length; index++) {
-        dropdownItem[index].addEventListener('click', setText);
+    let dropdown = document.getElementById('dropdown-content-democlass');
+    // console.log(dropdown.childNodes[0])
+    for (let index = 0; index < dropdown.childElementCount - 1; index++) {
+        dropdown.childNodes[index].addEventListener('click', setText);
     }
 }
 
 function setText(e) {
-    console.log(e.target.name)
-    let dropdown = document.getElementById('dropdownMenuButton1');
+    let dropdown = document.getElementById('dropbtn');
     dropdown.innerText = e.target.text
 
     let content = document.getElementById('content');
     let result = coursedata.filter(obj => {
         return obj.Name === e.target.text
     })
-    content.innerHTML = `<h2>${result[0].Name}</h2>
-                        <h3>${result[0].Desc}</h3>
-                        <h4>${result[0].Cost}</h4>
-                        <h5>By:- ${result[0].professorName}</h5>`;
+    content.innerHTML = `<h1>${result[0].Name}</h1>
+                        <h2>${result[0].Desc}</h2>
+                        <h3>${result[0].Cost}</h3>
+                        <h4>By:- ${result[0].professorName}</h4>`;
+    // coursesDropdownUl.style.display = 'none';
+    // coursesDropdownUl.style = 'none';
 };

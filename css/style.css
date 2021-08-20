@@ -427,83 +427,95 @@ footer a {
     padding: 2px 2px;
 }
 
-.form {
+
+/* Contact Page CSS */
+
+.contact-form {
     display: flex;
-    align-items: center;
-    width: 100%;
-    font: 18px;
-    margin: 0px;
-    justify-content: center;
-}
-
-.form * {
-    justify-content: center;
-    align-items: center;
-}
-
-.form input {
-    margin: 30px;
-    width: 50%;
-    font-size: 19px;
-    border: 2px solid black;
-    border-radius: 5px;
-    padding: 5px;
-}
-
-.form textarea {
-    resize: none;
-    margin: 30px;
-    width: 50%;
-    font-size: 19px;
-    border: 2px solid black;
-    border-radius: 5px;
-    padding: 5px;
-}
-
-.select-course {
-    resize: none;
-    margin: 30px;
-    width: 50%;
-    font-size: 19px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-}
-
-.select-course * {
+    flex-direction: column;
     width: 100%;
     justify-content: center;
     align-items: center;
-}
-
-.form label {
-    font-size: 20px;
-    color: white;
-}
-
-.form-1 {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    font: 18px;
-    margin: 0px;
-    justify-content: center;
-}
-
-.form-1 #contact-submitbtn {
-    background-color: #84368d;
-    color: white;
-    border-radius: 5px;
-    font-size: 20px;
-    padding: 5px 20px 5px 20px;
-}
-
-.contact-section {
     background-image: url('../img/contact-bg.png');
-    background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
+    background-size: cover;
 }
+
+.contact-form-content {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form-content-1 {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form-content * {
+    margin: 10px;
+}
+
+.contact-form-content label {
+    width: 10%;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+.contact-form-content-1 label {
+    width: 10%;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+.contact-form-content input {
+    width: 70%;
+    font-size: 18px;
+    padding: 10px;
+    border: 3px rgb(236, 246, 144) solid;
+    border-radius: 5px;
+    background-color: steelblue;
+    color: white;
+}
+
+.contact-form-content input::placeholder {
+    color: rgba(255, 255, 255, 0.767);
+}
+
+.contact-form-content textarea {
+    width: 70%;
+    height: 20vh;
+    font-size: 18px;
+    padding: 10px;
+    border: 3px rgb(236, 246, 144) solid;
+    border-radius: 5px;
+    background-color: steelblue;
+    color: white;
+    resize: none;
+}
+
+.contact-form-content textarea::placeholder {
+    color: rgba(255, 255, 255, 0.767);
+}
+
+.contact-form-content button {
+    padding: 5px 30px 5px 30px;
+    border: 3px solid rgb(236, 246, 144);
+    background-color: grey;
+    color: white;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+/* Contact Page CSS -2*/
 
 .contact-details {
     background-image: url('../img/contact-banner.jpg');
@@ -532,4 +544,74 @@ footer a {
 .head-type {
     font-size: 40px;
     font-family: 'Ubuntu Mono', monospace;
+}
+
+
+/* Style The Dropdown Button */
+
+.dropbtn {
+    background-color: steelblue;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border: 3px solid rgb(236, 246, 144);
+    border-radius: 5px;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+
+.dropdown {
+    width: 70%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: inline-block;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 100%;
+}
+
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+/* Change color of dropdown links on hover */
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+
+/* Show the dropdown menu on hover */
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+
+.dropdown:hover .dropbtn {
+    background-color: blue;
 }

@@ -5,7 +5,7 @@ function sendEmail() {
         To: "aakarsh2504@gmail.com",
         From: "kumaraakarsh25@gmail.com",
         Subject: "Mail from AakarshClasses Website",
-        Body: "Name: " + document.getElementById('name').value + "\nEmail: " + document.getElementById('email').value + "\nMessage: " + document.getElementById('message').value
+        Body: "Name: " + document.getElementById('name').value + "\nEmail: " + document.getElementById('email').value + "\nCourse " + document.getElementById('dropbtn').innerText
     }).then(
         () => alert('Your message have been sent. \n Please refer your given Email for reply.')
     );
