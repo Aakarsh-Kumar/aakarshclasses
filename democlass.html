@@ -36,16 +36,52 @@
             </ul>
         </div>
     </header>
-    <div class="select-course">
-        <label for="courses">Select Course:</label>
-
-        <select name="courses" id="cars">
-            <option value="IP">IP</option>
-            <option value="CS">CS</option>
-            <option value="eh">Ethical Hacking</option>
-            <option value="linux">Linux</option>
-        </select>
+    <form action="javascript:sendEmail()">
+        <div class="contact-section">
+            <center>
+                <h1 style="color: white;">Contact Us</h1>
+            </center>
+            <div class="form">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Name" required>
+            </div>
+            <div class="form">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="xyz@abc.com" required>
+            </div>
+            <div class="form">
+                <label for="message">Message:</label>
+                <div class="select-course">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Select Course
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" id="courses-dropdown-ul">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="form-1">
+                <input type="submit" value="Submit" id="contact-submitbtn">
+            </div>
+        </div>
+        </div>
+    </form>
+    <div class="contact-details">
+        <p><u>Contact No.</u>:<a href="tel: +91 1234567890">+91 1234567890</a></p>
+        <br>
+        <p><u>Add.</u>: XYZ Colony,<br>&emsp;&emsp;ABC Lane,<br>&emsp;&emsp;Gaya-823001</p>
+        <p><u>Mail ID</u>: <a href="mailto:aakarsh2504@gmail.com"> aakarsh2504@gmail.com</a></p>
     </div>
+    <center>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.869578978791!2d85.00679751436978!3d24.799919053790425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f32a167b7ec1c7%3A0x6c9f04e74e8a4726!2sAN%20Road%2C%20Gaya%2C%20Bihar%20823001!5e0!3m2!1sen!2sin!4v1628683597756!5m2!1sen!2sin"
+            width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </center>
+    <footer>
+        Copyright &copy; Aakarsh Classes 2021 All Rights Reserved <br>Created by Aakarsh Kumar <br> Contact: <a href="tel: +91 1234567890">+91 1234567890</a>
+    </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="js/mail.js"></script>
 </body>
 
 </html>

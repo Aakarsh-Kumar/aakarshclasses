@@ -1,0 +1,72 @@
+[
+    {
+        "sno": "1",
+        "Name": "Python",
+        "Desc": "You will be learning all about python",
+        "Cost": "Rs.20000",
+        "professorName": "Mr. Ramanujan"
+    },
+    {
+        "sno": "2",
+        "Name": "C++",
+        "Desc": "You will be learning all about C++",
+        "Cost": "Rs.15000",
+        "professorName": "Mr. John"
+    },
+    {
+        "sno": "3",
+        "Name": "Web Development",
+        "Desc": "You will be learning all about Web Development",
+        "Cost": "Rs.25000",
+        "professorName": "Mr. Khan"
+    },
+    {
+        "sno": "4",
+        "Name": "React JS",
+        "Desc": "You will be learning all about React JS",
+        "Cost": "Rs.5000",
+        "professorName": "Mr. Raju"
+    },
+    {
+        "sno": "5",
+        "Name": "Ethical Hacking",
+        "Desc": "You will be learning all about Ethical Hacking",
+        "Cost": "Rs.50000",
+        "professorName": "Mr. Aakarsh"
+    },
+    {
+        "sno": "6",
+        "Name": "C#",
+        "Desc": "You will be learning all about C#",
+        "Cost": "Rs.5000",
+        "professorName": "Mrs. Sweety"
+    },
+    {
+        "sno": "7",
+        "Name": "Data Science",
+        "Desc": "You will be learning all about Data Science.",
+        "Cost": "Rs.90000",
+        "professorName": "Mr. Rohan"
+    },
+    {
+        "sno": "8",
+        "Name": "Ruby on Rails",
+        "Desc": "You will be learning all about Ruby on Rails.",
+        "Cost": "Rs.100000",
+        "professorName": "Mrs. Leisha"
+    },
+    {
+        "sno": "9",
+        "Name": "QBasic",
+        "Desc": "You will be learning all about QBasic.",
+        "Cost": "Rs.1000",
+        "professorName": "Mr. Singhania"
+    },
+    {
+        "sno": "10",
+        "Name": "JAVA",
+        "Desc": "You will be learning all about JAVA.",
+        "Cost": "Rs.8000",
+        "professorName": "Mr. Desai"
+    }
+]
