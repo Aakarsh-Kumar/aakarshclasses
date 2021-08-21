@@ -47,7 +47,7 @@ header {
 }
 
 .heading {
-    width: 65%;
+    width: 60%;
 }
 
 .heading img {
@@ -59,8 +59,8 @@ header {
 
 .menu {
     display: flex;
-    width: 30%;
-    justify-content: left;
+    width: 35%;
+    justify-content: center;
 }
 
 .menu a {
@@ -101,13 +101,14 @@ header {
 
 .head-sec1-content {
     display: flex;
-    width: 70%;
     justify-content: center;
+    width: fit-content;
 }
 
 .head-sec1-content h1 {
     font-family: 'Open Sans', sans-serif;
-    justify-content: center
+    justify-content: center;
+    margin-left: 20px;
 }
 
 .head-sec1-content h1 a button {
@@ -144,9 +145,10 @@ header {
     font-weight: 500;
 }
 
-.head-sec1-img {
+
+/* .head-sec1-img {
     width: 30%;
-}
+} */
 
 .head-sec1-img img {
     justify-content: center;

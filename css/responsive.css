@@ -1,0 +1,41 @@
+@media screen and (max-width: 886px) {
+    .head-sec1-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .head-sec1-img {
+        display: none;
+    }
+    .head-sec1-content p {
+        margin: 10px;
+    }
+    .head-sec2 {
+        flex-direction: column;
+    }
+    .slideshow-container {
+        width: 100%;
+    }
+    .message-container {
+        width: 100%;
+    }
+    #margin-head {
+        margin-top: 300px;
+    }
+    .head-sec3 {
+        flex-direction: column;
+    }
+    .flip-card {
+        width: 90%;
+        margin: auto;
+    }
+    .nav-list {
+        flex-direction: column;
+    }
+    .head-sec1-content p {
+        width: auto;
+    }
+    header {
+        height: 180px;
+    }
+}
