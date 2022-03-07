@@ -50,7 +50,6 @@ function courses(data) {
         };
 
         let coursesContent = document.getElementsByClassName('head-sec3')[document.getElementsByClassName('head-sec3').length - 1];
-        // console.log(coursesContent[coursesContent.length-1])
         let flipCard = document.createElement('div');
         flipCard.className = 'flip-card';
         coursesContent.appendChild(flipCard);
