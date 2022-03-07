@@ -1,3 +1,5 @@
+// root/js/democlass.js
+
 fetch('json/courses.json')
     .then(function(response) {
         return response.json();

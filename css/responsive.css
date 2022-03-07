@@ -1,3 +1,5 @@
+/* root/css/responsive.css */
+
 @media screen and (max-width: 886px) {
     .head-sec1-content {
         flex-direction: column;

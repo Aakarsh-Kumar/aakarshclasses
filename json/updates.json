@@ -1,6 +1,6 @@
-[   {
-    "update": "New Batch",
-    "link": "https://www.google.com"
+[{
+        "update": "New Batch",
+        "link": "https://www.google.com"
     },
     {
         "update": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, minima, eos atque expedita architecto temporibus necessitatibus similique voluptatem provident quis culpa dolore ea? Numquam odio praesentium exercitationem. Molestias, soluta totam?",
@@ -8,7 +8,7 @@
     },
     {
         "update": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic iste alias excepturi adipisci voluptatum. Ex consequatur hic enim, itaque voluptate accusamus pariatur illo veritatis ab quae nobis corrupti cupiditate porro quaerat dignissimos! Veritatis voluptatibus at sunt quis sint rem quae assumenda!",
-        "link": "https://akpiano.herokuapp.com"
+        "link": "https://dpsgaya.edsecure.org"
     },
     {
         "update": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, minima, eos ",
@@ -44,14 +44,6 @@
     },
     {
         "update": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, minima, eos atque expedita architecto temporibus necessitatibus similique voluptatem provident quis culpa dolore ea? Numquam odio praesentium exercitationem. Molestias, soluta totam?",
-        "link": "#"
-    },
-    {
-        "update": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, minima, eos atque expedita architecto temporibus necessitatibus similique voluptatem provident quis culpa dolore ea? Numquam odio praesentium exercitationem. Molestias, soluta totam?",
-        "link": "#"
-    },
-    {
-        "update": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic iste alias excepturi adipisci voluptatum. Ex consequatur hic enim, itaque voluptate accusamus pariatur illo veritatis ab quae nobis corrupti cupiditate porro quaerat dignissimos! Veritatis voluptatibus at sunt quis sint rem quae assumenda!",
         "link": "#"
     }
 ]
