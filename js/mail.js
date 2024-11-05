@@ -2,7 +2,7 @@
 
 function sendEmail() {
     Email.send({
-        SecureToken: "37c73fcb-f61f-4229-9dcc-fc10ae0f079c",
+        SecureToken: "5c2567f53aba9483cae35fc269111fc89e7af7f4",
         To: "aakarsh2504@gmail.com",
         From: "kumaraakarsh25@gmail.com",
         Subject: "Mail from AakarshClasses Website",
